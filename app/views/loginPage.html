@@ -1,0 +1,25 @@
+<section class="loginPage">
+    <div class="col-xs-12 col-md-4 col-md-offset-8">
+    <div class="container">
+        <div class="card"></div>
+        <div class="card">
+            <h1 class="title">Login</h1>
+            <form>
+                <div class="input-container">
+                    <input type="text" id="Username" required="required" ng-model="userName" autocomplete="off"/>
+                    <label for="Username">Username</label>
+                    <div class="bar"></div>
+                </div>
+                <div class="input-container">
+                    <input type="password" id="Password" required="required" ng-model="userPassword"/>
+                    <label for="Password">Password</label>
+                    <div class="bar"></div>
+                </div>
+                <div class="button-container">
+                    <button ng-click="loginUser(userName,userPassword)"><span>Go</span></button>
+                </div>
+            </form>
+        </div>
+    </div>
+        </div>
+</section>
