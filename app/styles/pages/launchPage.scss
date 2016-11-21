@@ -1,0 +1,195 @@
+.launchPage{
+  padding-top: 90px;
+  .secondClass:after{
+    height:0;
+    clear:both;
+    content:".";
+    visibility:hidden
+  }
+  .userNameDisplay{
+    font-size: 24px!important;
+    padding-top: 10px;
+    word-wrap: break-word;
+    padding-left: 240px;
+  }
+  nav {
+    .navbar-brand {
+      font-size: 30px;
+
+    }
+    .navbar-toggle {margin: 13px 15px 13px 0;}
+    a {
+      font-size: 18px;
+      padding-bottom: 20px !important;
+      padding-top: 20px !important;
+      transition: all 0.3s ease;
+      color: #ffffff;
+      cursor: pointer;
+    }
+  }
+
+  .nav>li>a:focus, .nav>li>a:hover{
+    background-color: inherit;
+  }
+
+  nav.navbar.shrink {
+    min-height: 35px;
+    .navbar-brand {font-size: 25px;}
+    a {
+      font-size: 15px;
+      padding-bottom: 10px !important;
+      padding-top: 10px !important;
+    }
+    .navbar-toggle {
+      margin: 8px 15px 8px 0;
+      padding: 4px 5px;
+    }
+  }
+
+  .launchPageContainer{
+    margin-left: 65px;
+    .animated{
+      -webkit-animation-delay: 1s;
+      animation-delay: 1s;
+    }
+    ul[dnd-list],
+    ul[dnd-list] > li {
+      position: relative;
+    }ul[dnd-list] {
+       padding-left: 0px;
+     }
+    ul[dnd-list] .dndDraggingSource {
+      display: none;
+    }
+    ul[dnd-list] .dndPlaceholder {
+      display: block;
+      background-color: #ddd;
+      min-height: 42px;
+    }
+    ul[dnd-list] li {
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-top-right-radius: 4px;
+      border-top-left-radius: 4px;
+      display: block;
+      padding: 10px 15px;
+      margin-bottom: 10px;
+      margin-top: 10px;
+      cursor: pointer;
+    }
+
+    ul[dnd-list] li.selected {
+      background-color: #dff0d8;
+      color: #3c763d;
+    }
+  }
+  .whiteBackground{
+    background-color: white;
+    width: auto;
+  }
+  .width15{
+    width:15%;
+  }
+  .displayInline{
+    display: inline;
+  }
+  .disPlayBlock{
+    display: block;
+  }
+  .paddingRight15{
+    padding-right: 15px;
+  }
+  .listWhiteBackground{
+    background-color: white;
+    width:200px;
+    margin-right: 40px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    -webkit-box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.67);
+    -moz-box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.67);
+    box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.67);
+    .listClass{
+      margin-top: 10px;
+      font-size: 14px;
+      margin-bottom: 10px;
+      word-wrap: break-word;
+    }
+    .dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover{
+      color: #ffffff;
+      background: rgba(51, 122, 183, 1);
+      cursor: pointer;
+    }
+    .paddingLeftRight0{
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+    .marginTop15{
+      margin-top: 15px;
+    }
+    .marginTop10{
+      margin-top: 10px;
+    }
+    .inputTextList{
+      margin-top: 15px;
+      margin-left: 15px;
+    }
+    .listButton{
+      margin-top: 15px;
+      margin-left: 15px;
+      margin-bottom: 15px;
+    }
+  }
+  .width120{
+    width: 120px;
+  }
+  .addCardText{
+    margin-bottom: 15px;
+    cursor: pointer;
+  }
+  .newListClass{
+    cursor: pointer;
+  }
+  .borderedSection{
+    height:80px;
+  }
+}
+
+.cardDetailsPopup{
+  height: 500px;
+  overflow-y: scroll;
+  padding-left: 15px;
+  padding-right: 15px;
+  .closeCardDetails{
+    cursor: pointer;
+  }
+  .cardTitle{
+    margin-top: 15px;
+  }
+  .paddingLeftRight0{
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .commentTime{
+    padding-left: 24px;
+    padding-right: 0px;
+    font-size: 13px;
+  }
+  .marginTop15{
+    margin-top: 15px;
+  }
+  .commentText {
+    word-wrap: break-word;
+    margin-bottom: 10px;
+  }
+  .commentTitle{
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 600;
+  }
+  .borderBottom{
+    border-bottom: 1px dashed #000000;
+  }
+  .noBorderBottom{
+    border-bottom: none;
+  }
+}
