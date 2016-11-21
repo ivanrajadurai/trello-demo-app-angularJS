@@ -1,0 +1,46 @@
+<div class="cardDetailsPopup">
+    <div class="pull-right closeCardDetails" ng-click="closeCardDetails()">
+        X
+    </div>
+    <div class="cardTitle col-xs-12 paddingLeftRight0">
+        Card Title
+    </div>
+    <div class="col-xs-12 paddingLeftRight0">
+        <div class="pull-left">
+            <input type="text" placeholder="Card Tite" ng-init="cardTitle = currentCard.cardTitle" ng-key-enter="updateCardTitle(cardTitle)" ng-model="cardTitle" ng-blur="updateCardTitle(cardTitle)">
+        </div>
+        <div class="pull-right">
+            <button type="button" class="btn btn-warning" ng-click="deleteCard(currentCard)">Delete this card</button>
+        </div>
+    </div>
+    <div class="cardTitle col-xs-12 paddingLeftRight0">
+        Card Description
+    </div>
+    <div class="col-xs-12 paddingLeftRight0">
+        <div class="pull-left">
+            <input type="text" placeholder="Card Description" ng-model="cardDescription" ng-init="cardDescription = currentCard.cardDescription" ng-key-enter="updateCardDescription(cardDescription)" ng-blur="updateCardDescription(cardDescription)">
+        </div>
+    </div>
+    <div class="cardTitle col-xs-12 paddingLeftRight0">
+        Add a comment
+    </div>
+    <div class="col-xs-12 paddingLeftRight0">
+            <textarea typeof="text" placeholder="Write a comment" ng-init="modal.comment = null" data-ng-model="modal.comment" ng-key-enter="addComment(modal.comment)" clear-input></textarea>
+    </div>
+    <div class="col-xs-12 marginTop15 paddingLeftRight0">
+    <button type="button" class="btn btn-primary" ng-click="addComment(modal.comment)" ng-disabled="!modal.comment">Add Comment</button>
+        </div>
+    <div ng-if="currentCard.comments.length > 0">
+        <div class="col-xs-12 paddingLeftRight0 commentTitle">
+            Comments
+        </div>
+        <div class="col-xs-12 marginTop15 borderBottom paddingLeftRight0" ng-repeat="commentDetails in currentCard.comments" ng-class="{'noBorderBottom': $last}">
+            <div class="col-xs-8 commentText paddingLeftRight0">
+                {{commentDetails.commentTitle}}
+            </div>
+            <div class="col-xs-4 commentTime">
+                {{commentDetails.commentTime | date : "dd-MM-yy HH:mm:ss"}}
+            </div>
+        </div>
+    </div>
+</div>
